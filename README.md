@@ -1,20 +1,3 @@
-employee-crud/
-├── index.html
-├── style.css
-img/
-│ └── background.jpg
-pages/
-│ ├── tasks.html
-│ ├── vacation.html
-│ ├── chart.html
-│ └── five.html
-scripts/
-├── employees.js
-├── tasks.js
-├── vacation.js
-├── chart.js
-└── five.js
-
 Setup Guide
 
       To set up and run the employee management app, follow these steps:
