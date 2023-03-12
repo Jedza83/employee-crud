@@ -123,6 +123,7 @@ ul {
   text-align: center;
   overflow: hidden;
   padding: 0;
+  margin: 20px auto;
 }
 li {
   float: left;
@@ -131,8 +132,8 @@ li a {
   background-color: #4285f4;
   display: block;
   color: white;
-  padding: 30px 15px;
-  margin: 10px 30px;
+  padding: 20px 15px;
+  margin: 20px;
   width: 80%;
   border-radius: 12px;
   text-decoration: none;
