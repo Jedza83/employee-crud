@@ -14,15 +14,12 @@ h1 {
 }
 form {
   width: 40%;
-  margin: 20px auto;
-}
-table {
-  border-collapse: collapse;
-  margin: 20px;
+  margin: 30px auto;
 }
 table.list {
   margin: 50px auto;
   width: 70%;
+  border-collapse: collapse;
 }
 table.list th {
   background-color: #cc5500;
@@ -54,19 +51,19 @@ textarea {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: none;
+  border-radius: 8px;
 }
 input[type="submit"] {
-  width: 30%;
+  width: 25%;
   background-color: #4285f4;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  padding: 18px 20px;
+  margin: 10px;
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
 }
 input[type="submit"]:hover {
   background-color: #cc5500;
@@ -123,20 +120,21 @@ label.validation-error {
 }
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  text-align: center;
   overflow: hidden;
-  background-color: #4285f4;
+  padding: 0;
 }
 li {
   float: left;
 }
 li a {
+  background-color: #4285f4;
   display: block;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
-  margin: 0;
+  padding: 30px 15px;
+  margin: 10px 50px;
+  width: 80%;
+  border-radius: 12px;
   text-decoration: none;
   font-size: 20px;
 }
@@ -144,9 +142,7 @@ li a:hover {
   background-color: #ecb22e;
   color: white;
 }
-nav {
-  margin-bottom: 50px;
-}
+
 .active {
   background-color: #cc5500;
   border-left: none;
