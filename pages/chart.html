@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <title>Salary Range Chart</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Employees Management</a></li>
+        <li><a href="vacation.html">Vacation Management</a></li>
+        <li><a href="tasks.html">Tasks Management</a></li>
+        <li><a href="five.html">Top Five Employees</a></li>
+        <li><a href="#" class="active">Salary Range Chart</a></li>
+      </ul>
+    </nav>
+    <h1>Salary Range Chart</h1>
+    <div
+      id="myChart"
+      style="width: 100%; max-width: 600px; height: 500px"
+    ></div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyA7BP7_xayZL_xG83v6VJLXelt5-2ZEQBc",
+        authDomain: "emloyees-project.firebaseapp.com",
+        projectId: "emloyees-project",
+        storageBucket: "emloyees-project.appspot.com",
+        messagingSenderId: "824957280592",
+        appId: "1:824957280592:web:1a126c600337eb54d50c55",
+        measurementId: "G-2HHTEKRK83",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      let db = firebase.firestore();
+    </script>
+    <script src="../scripts/chart.js"></script>
+  </body>
+</html>

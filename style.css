@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+form {
+  width: 40%;
+  margin: 20px auto;
+}
+table {
+  border-collapse: collapse;
+  margin: 20px;
+}
+table.list {
+  margin: 50px auto;
+  width: 70%;
+}
+table.list th {
+  background-color: #cc5500;
+  width: 16%;
+  height: 50px;
+  color: white;
+}
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even),
+table.list thead > tr {
+  background-color: #4285f4;
+  color: white;
+}
+tr:nth-child(odd),
+table.list thead > tr {
+  background-color: white;
+  color: #4285f4;
+}
+label {
+  color: white;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input[type="submit"] {
+  width: 30%;
+  background-color: #4285f4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 24px;
+}
+input[type="submit"]:hover {
+  background-color: #cc5500;
+  color: white;
+}
+form div.form-action-buttons {
+  text-align: right;
+}
+a {
+  cursor: pointer;
+  text-decoration: underline;
+  margin-right: 4px;
+}
+a:hover {
+  color: #ecb22e;
+}
+label.validation-error {
+  color: red;
+  margin-left: 5px;
+}
+.hide {
+  display: none;
+}
+.topEmployees,
+.vacationFirst {
+  background-color: #cc5500;
+  margin: 15px auto;
+  width: 70%;
+  border-radius: 12px;
+  color: white;
+}
+#top,
+#vacatHOne {
+  padding: 15px 0 0 0;
+  color: white;
+}
+#top5,
+#btnVac {
+  margin: 10px 50px;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  background-color: #4285f4;
+  color: white;
+  border-radius: 12px;
+  border: none;
+}
+#res,
+#resVac {
+  margin: 10px 50px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  border-radius: 12px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4285f4;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 0;
+  text-decoration: none;
+  font-size: 20px;
+}
+li a:hover {
+  background-color: #ecb22e;
+  color: white;
+}
+nav {
+  margin-bottom: 50px;
+}
+.active {
+  background-color: #cc5500;
+  border-left: none;
+  border-right: none;
+}
+#myChart {
+  margin: 50px auto;
+}

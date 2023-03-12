@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employees Management</title>
+    <link rel="stylesheet" href="style.css" />   
+  </head>
+
+  <body>    
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Employees Management</a></li>
+        <li><a href="pages/vacation.html">Vacation Management</a></li>
+        <li><a href="pages/tasks.html">Tasks Management</a></li>
+        <li><a href="pages/five.html">Top Five Employees</a></li>
+        <li><a href="pages/chart.html"> Salary Range Chart</a></li>
+      </ul>
+    </nav> 
+  
+    <h1>EMPLOYEES</h1>
+            <form  id="employeeForm">
+            <div>
+              <label>Full Name*</label>
+              <label class="validation-error hide" id="fullNameValidationError"
+                >This field is required.</label
+              >
+              <input type="text" name="fullName" id="fullName" />
+            </div>
+            <div>
+              <label>Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div>
+              <label>Phone number</label>
+              <input type="number" name="phonenumber" id="phonenumber" />
+            </div>
+            <div>
+              <label>Date of birth</label>
+              <input type="text" name="dateofbirth" id="dateofbirth" pattern="\d{2}\.\d{2}\.\d{4}." placeholder="dd.mm.yyyy." required />
+            </div>
+            <div>
+              <label>Monthly Salary</label>
+              <input type="number" name="salary" id="salary" />
+            </div>
+
+            <div class="form-action-buttons">
+              <input type="submit" value="Submit"/>
+            </div>
+          </form>
+        </td>
+        <td>
+          <table class="list" id="employeeList">
+            <thead>
+              <tr>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Date of Birth</th>
+                <th>Monthly Salary</th>
+                <th>Edit/Delete</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>    
+       
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    
+    <script>
+        const firebaseConfig = {
+        apiKey: "AIzaSyA7BP7_xayZL_xG83v6VJLXelt5-2ZEQBc",
+        authDomain: "emloyees-project.firebaseapp.com",
+        projectId: "emloyees-project",
+        storageBucket: "emloyees-project.appspot.com",
+        messagingSenderId: "824957280592",
+        appId: "1:824957280592:web:1a126c600337eb54d50c55",
+        measurementId: "G-2HHTEKRK83"
+      };
+    
+      // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        let db = firebase.firestore();
+    </script>
+    
+    <script src="scripts/employees.js"></script>    
+ 
+  </body>
+</html>

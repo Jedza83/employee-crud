@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <title>Vacation Management</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Employees Management</a></li>
+      <li><a href="#" class="active">Vacation Management</a></li>
+      <li><a href="tasks.html">Tasks Management</a></li>
+      <li><a href="five.html">Top Five Employees</a></li>
+      <li><a href="chart.html"> Salary Range Chart</a></li>
+    </ul>
+  </nav> 
+  <div class="vacationFirst">
+    <h1 id="vacatHOne">
+      Who goes to vacation first?
+    </h1>
+    <button id="btnVac" onclick="closestHoliday()">Click here</button>
+    <p id="resVac">    
+    </p>
+  </div>    
+    <h1>Vacation Management</h1>  
+          <form id="holidaysForm">
+            <div>
+              <label>Employee name*</label>
+              <label class="validation-error hide" id="nameValidationError"
+                >This field is required.</label
+              >
+              <input type="text" name="name" id="name" />
+            </div>
+            <div>
+              <label>Vacation start-date</label>
+              <input type="text" name="start" id="start" pattern="\d{2}\.\d{2}\.\d{4}." placeholder="dd.mm.yyyy." required  />
+            </div>
+            <div>
+              <label>Vacation end-date</label>
+              <input type="text" name="end" id="end" pattern="\d{2}\.\d{2}\.\d{4}." placeholder="dd.mm.yyyy." required />
+            </div>
+            <div class="form-action-buttons">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </td>
+        <td>
+          <table class="list" id="holidaysList">
+            <thead>
+              <tr>
+                <th>Employee</th>
+                <th>Vacation start-date</th>
+                <th>Vacation end-date</th>
+                <th>Edit/Delete</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    
+    <script>
+        const firebaseConfig = {
+        apiKey: "AIzaSyA7BP7_xayZL_xG83v6VJLXelt5-2ZEQBc",
+        authDomain: "emloyees-project.firebaseapp.com",
+        projectId: "emloyees-project",
+        storageBucket: "emloyees-project.appspot.com",
+        messagingSenderId: "824957280592",
+        appId: "1:824957280592:web:1a126c600337eb54d50c55",
+        measurementId: "G-2HHTEKRK83"
+      };
+    
+      // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        let db = firebase.firestore();
+    </script>
+          <script src="../scripts/vacation.js"></script>
+</body>
+</html>
